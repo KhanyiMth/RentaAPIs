@@ -1,0 +1,271 @@
+﻿{
+  "Scenario": "Regression",
+  "DataSource": {
+    "Version": 3,
+    "EscapeCharacter": "\"",
+    "ReadMultiLines": false,
+    "KeepDiacritics": false,
+    "KeepPunctuations": false,
+    "AllowQuoting": false,
+    "Type": "TabularFile",
+    "FilePath": "C:\\Users\\Huawei\\Downloads\\RentaMatch_Train.csv",
+    "Delimiter": ",",
+    "DecimalMarker": ".",
+    "HasHeader": true,
+    "ColumnProperties": [
+      {
+        "ColumnName": "MonthlyIncome",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "MonthlyExpenses",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "HouseholdSize",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "MonthlyRent",
+        "ColumnPurpose": "Label",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      }
+    ]
+  },
+  "Environment": {
+    "Type": "LocalCPU",
+    "Version": 1
+  },
+  "RunHistory": {
+    "Version": 3,
+    "Type": "Result",
+    "Trials": [
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "FastForestRegression",
+        "Score": 0.55090959968500108,
+        "RuntimeInSeconds": 2.372,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e3",
+          "e0": {
+            "OutputColumnNames": [
+              "MonthlyIncome",
+              "MonthlyExpenses",
+              "HouseholdSize"
+            ],
+            "InputColumnNames": [
+              "MonthlyIncome",
+              "MonthlyExpenses",
+              "HouseholdSize"
+            ]
+          },
+          "e1": {
+            "InputColumnNames": [
+              "MonthlyIncome",
+              "MonthlyExpenses",
+              "HouseholdSize"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e3": {
+            "NumberOfTrees": 121,
+            "NumberOfLeaves": 7,
+            "FeatureFraction": 0.88496214,
+            "LabelColumnName": "MonthlyRent",
+            "FeatureColumnName": "Features"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "FastForestRegression",
+        "Score": 0.55080267794988169,
+        "RuntimeInSeconds": 2.251,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e3",
+          "e0": {
+            "OutputColumnNames": [
+              "MonthlyIncome",
+              "MonthlyExpenses",
+              "HouseholdSize"
+            ],
+            "InputColumnNames": [
+              "MonthlyIncome",
+              "MonthlyExpenses",
+              "HouseholdSize"
+            ]
+          },
+          "e1": {
+            "InputColumnNames": [
+              "MonthlyIncome",
+              "MonthlyExpenses",
+              "HouseholdSize"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e3": {
+            "NumberOfTrees": 114,
+            "NumberOfLeaves": 7,
+            "FeatureFraction": 0.85663354,
+            "LabelColumnName": "MonthlyRent",
+            "FeatureColumnName": "Features"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "FastForestRegression",
+        "Score": 0.55068485751292584,
+        "RuntimeInSeconds": 2.328,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e3",
+          "e0": {
+            "OutputColumnNames": [
+              "MonthlyIncome",
+              "MonthlyExpenses",
+              "HouseholdSize"
+            ],
+            "InputColumnNames": [
+              "MonthlyIncome",
+              "MonthlyExpenses",
+              "HouseholdSize"
+            ]
+          },
+          "e1": {
+            "InputColumnNames": [
+              "MonthlyIncome",
+              "MonthlyExpenses",
+              "HouseholdSize"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e3": {
+            "NumberOfTrees": 148,
+            "NumberOfLeaves": 9,
+            "FeatureFraction": 0.8796669,
+            "LabelColumnName": "MonthlyRent",
+            "FeatureColumnName": "Features"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "FastForestRegression",
+        "Score": 0.55068245616710843,
+        "RuntimeInSeconds": 2.116,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e3",
+          "e0": {
+            "OutputColumnNames": [
+              "MonthlyIncome",
+              "MonthlyExpenses",
+              "HouseholdSize"
+            ],
+            "InputColumnNames": [
+              "MonthlyIncome",
+              "MonthlyExpenses",
+              "HouseholdSize"
+            ]
+          },
+          "e1": {
+            "InputColumnNames": [
+              "MonthlyIncome",
+              "MonthlyExpenses",
+              "HouseholdSize"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e3": {
+            "NumberOfTrees": 82,
+            "NumberOfLeaves": 6,
+            "FeatureFraction": 0.8872447,
+            "LabelColumnName": "MonthlyRent",
+            "FeatureColumnName": "Features"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "FastForestRegression",
+        "Score": 0.550494318865719,
+        "RuntimeInSeconds": 2.419,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e3",
+          "e0": {
+            "OutputColumnNames": [
+              "MonthlyIncome",
+              "MonthlyExpenses",
+              "HouseholdSize"
+            ],
+            "InputColumnNames": [
+              "MonthlyIncome",
+              "MonthlyExpenses",
+              "HouseholdSize"
+            ]
+          },
+          "e1": {
+            "InputColumnNames": [
+              "MonthlyIncome",
+              "MonthlyExpenses",
+              "HouseholdSize"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e3": {
+            "NumberOfTrees": 177,
+            "NumberOfLeaves": 7,
+            "FeatureFraction": 0.8826796,
+            "LabelColumnName": "MonthlyRent",
+            "FeatureColumnName": "Features"
+          }
+        }
+      }
+    ],
+    "Estimators": {
+      "e0": "ReplaceMissingValues",
+      "e1": "Concatenate",
+      "e2": "FastTreeRegression",
+      "e3": "FastForestRegression",
+      "e4": "LightGbmRegression",
+      "e5": "LbfgsPoissonRegressionRegression",
+      "e6": "SdcaRegression"
+    },
+    "Schema": "e0 * e1 * (e2 + e3 + e4 + e5 + e6)",
+    "MetricName": "RSquared",
+    "ModelFilePath": "D:\\Console Apps\\RentaAPIs\\RentaML\\RentaMatch.mlnet"
+  },
+  "Type": "TrainingConfig",
+  "Version": 5,
+  "TrainingOption": {
+    "Version": 2,
+    "Subsampling": false,
+    "Type": "RegressionTrainingOption",
+    "TrainingTime": 120,
+    "LabelColumn": "MonthlyRent",
+    "ValidationOption": {
+      "Version": 0,
+      "Type": "CrossValidationValidationOption",
+      "NumberOfFolds": 5
+    }
+  }
+}
